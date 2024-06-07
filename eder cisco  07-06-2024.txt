@@ -1,0 +1,41 @@
+Cisco Packet Tracer PC Command Line 1.0
+C:\>enable
+Invalid Command.
+
+C:\>enable
+Invalid Command.
+
+C:\>ssh -l senac 192.168.1.251
+
+Password: 
+% Login invalid
+
+
+Password: 
+
+AVISO: acesso autorizado somente a funcionarios
+
+sw-02>enable
+Password: 
+sw-02#copy ru
+sw-02#copy running-config 
+% Incomplete command.
+sw-02#copy running-config star
+sw-02#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+sw-02#copy running-config flash
+Destination filename [running-config]? 
+Building configuration...
+[OK]
+sw-02# copy ru
+sw-02# copy running-config tftp:
+Address or name of remote host []? 192.168.1.1
+Destination filename [sw-02-confg]? sw-02-eder
+
+Writing running-config....!!
+[OK - 1740 bytes]
+
+1740 bytes copied in 3.011 secs (577 bytes/sec)
+sw-02#
